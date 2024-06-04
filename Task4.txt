@@ -1,0 +1,111 @@
+
+*{
+  margin:0;
+  border:0;
+  box-sizing: border-box;
+}
+.employee-birthday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #032b40;
+}
+
+ .birthday-card {
+ 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  color:#00ff00;
+border-radius: 8px;
+  padding: 20px;
+ 
+width: 500px; 
+  height: 500px;
+  background: linear-gradient(0deg, #7e96ce, #dcadad);
+  animation: glowing-border 1s alternate-reverse infinite;
+}
+
+@keyframes glowing-border
+{
+  0%{
+    border:3px solid #ff9800;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  50%{
+    border:3px solid #00ff9d;
+    box-shadow: 0 6px  rgba(168, 65, 144, 0.1);
+  
+  }
+  100%{
+    border:3px solid #3700ff;
+    box-shadow: 0 4px 10px ;
+
+  }
+}
+ 
+
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff9800;
+  margin: 0 auto;
+  display: block;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  0%
+ {
+    color: #73f708;
+    text-shadow: none;
+  }
+
+
+50%{
+    color:#c50909;
+
+
+  }
+ 100%{
+    color:#f9e50d;
+
+
+  }
+}
+
+p {
+  margin-top: 5px;
+  font-size: 18px;
+  color:  black;
+}
+
+.birthday-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #031417;
+  color: #fff;
+  border: none;
+  box-shadow:0 0 5px cyan;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.birthday-button:hover {
+  background-color: #ff6600;
+  box-shadow: 0 0 5px cyan,0 0 20px cyan,0 0 5px cyan,0 0 10px cyan,0 0 20px cyan;
+  transform: scale(1.05);
+}
+
+
+
